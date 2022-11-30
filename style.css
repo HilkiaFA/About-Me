@@ -1,0 +1,97 @@
+body{
+	background: #dedede;
+	font-size: 15px;
+}
+
+p{
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+h3{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #aaa;
+}
+.public {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+.tech-box{
+    background:linear-gradient(to right,#5687f9,#87aafc);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-size: 14px;
+    color: white;
+    border-radius: 12px;
+}
+.project {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 90px;
+}
+.project-box {
+    background:linear-gradient(to right,#5687f9,#87aafc);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+
+}
+
+.project-container {
+    margin-top: 17%;
+}
+
+
+.container{
+	max-width: 1080px;
+	margin: 20px auto;
+	background: #eaf3ff;
+	overflow: hidden;
+	padding: 10px;
+-webkit-transition: width 1s ease-in-out;
+-o-transition: width 1s ease-in-out;
+-moz-transition: width 1s ease-in-out;
+transition: width 1s ease-in-out;
+}
+
+	.middle{
+		width: 1270px;
+		border: 1px solid #dedede;
+		padding: 10px;
+		margin: 10px;
+        text-decoration: none;
+		float: left;
+	}
+
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		width: 100%;
+	}
+
+	.middle {
+		width: 68%;
+		float: right;
+	}
+
+}
+
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+
+	.middle {
+		width: auto;
+		float: none;
+		height: auto;
+	}
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+}
